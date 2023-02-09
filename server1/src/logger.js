@@ -7,7 +7,7 @@ function updateTime() {
   date =
     today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
   time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-  log_file = "../logs/" + "log" + date + ".txt";
+  log_file = "./logs/" + "log" + date + ".txt";
 }
 
 module.exports = {
