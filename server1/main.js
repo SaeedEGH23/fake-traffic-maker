@@ -15,7 +15,7 @@ async function downloadFile() {
   });
 }
 //Run module every 10 minutes
-cron.schedule("* */10 * * * *", () => {
+cron.schedule("*/1 * * * *", () => {
   downloadFile();
   console.log("running a task every 10 minute");
 });
